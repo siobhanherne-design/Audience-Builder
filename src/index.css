@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+@keyframes tabFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.tab-content {
+  animation: tabFadeIn 0.25s ease-out;
+}
+
+.picker-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #d1d5db transparent;
+}
+
+.picker-scroll::-webkit-scrollbar {
+  width: 5px;
+}
+
+.picker-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.picker-scroll::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 10px;
+}
+
+.picker-scroll::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}

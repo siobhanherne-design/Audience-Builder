@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm create *)",
+      "Bash(npx --yes create-vite@latest temp-scaffold --template react)",
+      "Bash(mv temp-scaffold/* temp-scaffold/.* .)",
+      "Bash(rmdir temp-scaffold *)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(screencapture -x /tmp/audience-builder-test.png)",
+      "Bash(npx vite *)",
+      "WebFetch(domain:localhost)",
+      "Bash(curl *)"
+    ]
+  }
+}
